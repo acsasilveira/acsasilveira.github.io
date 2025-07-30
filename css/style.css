@@ -1,0 +1,389 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    border:none;
+    outline: none;
+    scroll-behavior:smooth;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    scroll-margin-top: 100px;
+}
+
+/* Cores do site */
+:root {
+    --bg-color: #0E0E10;
+    --roxo: #8400C4;
+    --rosa: #FF007F;
+    --blue: #00F0FF;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Header */ 
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 2.5rem;
+    background-color: var(--bg-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar {
+    z-index:1000;
+}
+
+.header h2{
+    color: var(--white)
+}
+
+a.btn {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: var(--blue);
+    color: var(--black);
+    margin-left: 4rem;
+    transition: .1s;
+    box-shadow: 0px 0px 25px var(--blue);
+}
+
+
+a.btn:hover {
+    background-color: var(--white);
+    border-radius: 6px;
+    color: var(--rosa);
+    text-decoration: underline;
+    box-shadow: 0px 0px 25px var(--white);
+}
+
+.navbar a.active {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: var(--white);
+    text-decoration:underline;
+    margin-left: 4rem;
+    transition: none;
+    box-shadow: none;
+    background-color: var(--bg-color);
+    box-shadow: none;
+}
+
+.navbar a.active:hover {
+    color: var(--rosa);
+}
+
+/* Seções */
+/* Home */
+.home {
+    display: flex;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color:var(--white);
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--roxo);
+
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--rosa);
+}
+
+.home-content p {
+    color: var(--white)
+}
+
+.home .home-content .container-home {
+    display: flex;
+    justify-content:left;
+    margin-top: 0.7rem;
+}
+
+.container-home .icon {
+    display: flex;
+    justify-content:space-between;
+}
+
+a.social-media {
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+a.social-media img.icon-button{
+    width: 2.5rem;
+    transition: .1;
+}
+
+a.social-media:hover #quadrado{
+    box-shadow: 0px 0px 0.5rem var(--blue);
+}
+
+a.social-media:hover #redondo{
+    border-radius: 100px;
+    box-shadow: 0px 0px 0.5rem var(--blue);
+}
+
+
+/* About */
+.about {
+    padding: 2rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-content .escrito p {
+    max-width: 50vw;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--white)
+}
+
+.about-content .minha-foto{
+    box-shadow: 1px 2px var(--white);
+}
+
+.about-content .minha-foto img {
+    width: 35vw;
+    height: 35vw;
+    object-fit:cover;
+    object-position: top;
+    box-shadow: none;
+}
+
+.destaque {
+    color: var(--roxo);
+    text-decoration: underline solid var(--white);
+    font-weight: bold;
+}
+
+.linha-botao {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+    margin-left: -2rem;
+}
+
+a.curriculo {
+    display: flex;
+    align-items: center;
+    max-width: 15vw;
+    padding: 0rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background-color: var(--blue);
+    color: var(--black);
+    margin-left: 4rem;
+    transition: .1s;
+    box-shadow: 0px 0px 25px var(--blue);
+}
+
+
+a.curriculo:hover {
+    background-color: var(--white);
+    border-radius: 6px;
+    color: var(--rosa);
+    font-size: 0.95rem;
+    font-weight: bolder;
+    box-shadow: 0px 0px 25px var(--white);
+}
+
+.img-curriculo {
+    width: 35%;
+    height: 35%;
+    color: var(--black);
+}
+
+/* Serviços */
+.servicos {
+    padding: 2rem;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    font-size: 3.2rem;
+    color: var(--rosa);
+}
+
+.servicos-container .box{
+    background-color: var(--white);
+    max-width: 20vw;
+    box-shadow:  0px 0px 25px var(--white);
+}
+
+.servicos-container .box .conteudo {
+    margin: 1.5rem;
+}
+
+.servicos-container .box .conteudo h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.servicos-container .box .conteudo p{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 1.75rem
+}
+
+.servicos-container .box a:hover{
+    background-color: var(--blue);
+    border-radius: 6px;
+    color: var(--white);
+    text-decoration: underline;
+    box-shadow: 0px 0px 25px var(--blue);
+}
+
+/* Portfólio */
+.portfolio {
+    padding: 2rem;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.portfolio-container .box{
+    background-color: var(--white);
+    max-width: 30vw;
+    box-shadow:  0px 0px 25px var(--white);
+}
+
+.portfolio-container .box .conteudo {
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+.portfolio-container .box .conteudo h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.portfolio-container .box .conteudo p{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 1.75rem
+}
+
+.portfolio-container .box a:hover{
+    background-color: var(--blue);
+    border-radius: 6px;
+    color: var(--white);
+    text-decoration: underline;
+    box-shadow: 0px 0px 25px var(--blue);
+}
+
+.gif img{
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img{
+    display: block;
+    text-align: center;
+    margin: 0 auto 1rem;
+    width: 50%;
+    height: auto;
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagens img{
+    display: block;
+    text-align: center;
+    margin: 0 auto 1rem;
+    width: 25%;
+    border-radius:15px;
+    height: auto;
+}
+
+/* Rodapé */
+.footer {
+    background: linear-gradient(to right, var(--roxo), var(--blue), var(--rosa));
+    height:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black)
+}
