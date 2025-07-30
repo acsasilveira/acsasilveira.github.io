@@ -29,7 +29,8 @@ section {
 /* Cores do site */
 :root {
     --bg-color: #0E0E10;
-    --roxo: #8400C4;
+    --roxo: #BB00FF;
+    --lilas: #C84BFF;
     --rosa: #FF007F;
     --blue: #00F0FF;
     --white: #ffffff;
@@ -72,7 +73,7 @@ a.btn {
     color: var(--black);
     margin-left: 4rem;
     transition: .1s;
-    box-shadow: 0px 0px 25px var(--blue);
+    /*box-shadow: 0px 0px 25px var(--blue);*/
 }
 
 
@@ -81,7 +82,7 @@ a.btn:hover {
     border-radius: 6px;
     color: var(--rosa);
     text-decoration: underline;
-    box-shadow: 0px 0px 25px var(--white);
+    box-shadow: 0px 0px 25px var(--blue);
 }
 
 .navbar a.active {
@@ -199,7 +200,7 @@ a.social-media:hover #redondo{
 }
 
 .destaque {
-    color: var(--roxo);
+    color: var(--lilas);
     text-decoration: underline solid var(--white);
     font-weight: bold;
 }
@@ -217,12 +218,13 @@ a.curriculo {
     max-width: 15vw;
     padding: 0rem;
     font-size: 0.9rem;
+    font-weight: 800;
     border-radius: 6px;
     background-color: var(--blue);
     color: var(--black);
     margin-left: 4rem;
     transition: .1s;
-    box-shadow: 0px 0px 25px var(--blue);
+    /*box-shadow: 0px 0px 25px var(--blue);*/
 }
 
 
@@ -231,8 +233,8 @@ a.curriculo:hover {
     border-radius: 6px;
     color: var(--rosa);
     font-size: 0.95rem;
-    font-weight: bolder;
-    box-shadow: 0px 0px 25px var(--white);
+    font-weight:800;
+    box-shadow: 0px 0px 25px var(--blue);
 }
 
 .img-curriculo {
